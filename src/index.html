@@ -3,41 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<title>srchr</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header>
 		<h1>srchr</h1>
+	</header>
+	<div id=controls>
 		<fieldset>
-			<input type="search" name="search" id="search" />
-			<input type="submit" id="search_submit" />
+			<input type=search name=search id=search>
+			<input id=search_submit>
 		</fieldset>
-		
 		<fieldset>
 			<ul>
 				<li>
-					<input type="checkbox" name="flickr" value="1" />
-					<label for="flickr">Flickr</label>
+					<input type=checkbox name=flickr value=1>
+					<label for=flickr>Flickr</label>
 				</li>
 				<li>
-					<input type="checkbox" name="yahoo" value="1" />
-					<label for="flickr">Yahoo! Search</label>
+					<input type=checkbox name=yahoo value=1>
+					<label for=flickr>Yahoo! Search</label>
 				</li>
 				<li>
-					<input type="checkbox" name="upcoming" value="1" />
-					<label for="flickr">Upcoming</label>
+					<input type=checkbox name=upcoming value=1>
+					<label for=flickr>Upcoming</label>
 				</li>
 			</ul>
 		</fieldset>
-	</header>
+	</div>
+	<section>
+	  <h1>Search Terms</h1>
+	  <ul id=search_terms></ul>
+	</section>
+	<section>
+	  <h1>Search Results</h1>
+	  <ul id=search_results></ul>
+	</section>
 	
-	<ul id="search_terms">
-	</ul>
-	
-	<ul id="search_results">
-	</ul>
-	
-	<!-- use google-hosted javascript library of your choice -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script src="js/srchr.js"></script>
 </body>
