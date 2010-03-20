@@ -1,0 +1,22 @@
+/* reset, or something */
+ul, li, fieldset {margin:0;padding:0;}
+li {list-style:none;float:left;}
+fieldset {border:none;float:left;}
+
+/* typography */
+h2 {font:bold 18px Helvetica, "Comic Sans MS";}
+
+/* layout */
+body {padding:53px 3px;}
+body > header {display:block;position:absolute;left:-999px;}
+#controls {position:absolute;top:10px;left:10px;width:97.2%;padding:10px;-moz-box-shadow:0 2px 5px #000;-webkit-box-shadow:0 2px 5px #000;box-shadow:0 2px 5px #000;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), #ffffff);background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #fff),color-stop(4.5, rgb(0,0,0)));}
+#search-type {position:relative;top:3px;}
+#search-type li {height:16px;width:40px;}
+#search-type label {display:block;text-indent:-999px;}
+.sprite {background:url(../i/srchr_sprite.gif) no-repeat 22px 2px;}
+.yahoo {background-position: 22px -30px;}
+.upcoming {background-position: 22px -62px;}
+
+#terms, #results {height:700px;overflow:auto;}
+#terms {width:20%;float:left;outline:1px solid red;height:700px;}
+#results {float:right;outline: 1px solid blue;width:80%;height:700px;}
